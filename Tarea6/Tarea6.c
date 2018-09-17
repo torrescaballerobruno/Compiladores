@@ -10,9 +10,11 @@ void leerCadena();
 
 char cadena[MAX];
 char archivo[11] = "cadenas.txt";
+char tabla[]="simbolos.txt";
 int i=-1;
 int flag=1;
 int contPuntos=0;
+FILE *tablaSimbolos;
 
 int main(int argc, char** argv){
     leerCadena();
@@ -22,6 +24,7 @@ int main(int argc, char** argv){
 void leerCadena(){
   FILE *fp;
   fp = fopen (archivo, "r" );
+  tablaSimbolos = fopen(tabla,"w");
   if(fp==NULL){
     printf("Error al leer el archivo");
     exit(1);
@@ -35,6 +38,7 @@ void leerCadena(){
   }
 
   fclose(fp);
+  fclose(tablaSimbolos);
   memset(cadena, 0, sizeof(cadena));
 }
 
@@ -57,10 +61,12 @@ void e2cad(){
     e2cad();
   }else if(cadena[i] == '\n'){
     printf("Cadena aceptada:\t%s",cadena);
+    fprintf(tablaSimbolos,"%s",cadena);
   }else{
     printf("Error 2 Cadena no valida:\t%s",cadena);
   }
 }
+
 void e1num(){
   i++;
   if(cadena[i] >=48 && cadena[i] <= 57){
