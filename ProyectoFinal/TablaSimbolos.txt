@@ -1,0 +1,10 @@
+   Clave                                   Valor
+       0                              principale
+       1                                       x
+       2                                       y
+       3                                       i
+       4                                       a
+       5                                       b
+       6                                      es
+       7                                  cribir
+       8                             otrafuncion

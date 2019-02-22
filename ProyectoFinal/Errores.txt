@@ -1,0 +1,5 @@
+Error sintáctico en el caracter 64 de la cadena de átomos: <
+Error sintáctico en el caracter 64 de la cadena de átomos: <
+Error sintáctico en el caracter 64 de la cadena de átomos: <
+Error sintáctico en el caracter 64 de la cadena de átomos: <
+Error sintáctico en el caracter 64 de la cadena de átomos: <
